@@ -1,0 +1,67 @@
+/* Контейнер форми з тінями та закругленням */
+.auth-container {
+  max-width: 350px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+
+  /*  закруглення та тіні */
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  font-family: "Roboto", sans-serif;
+}
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.auth-group {
+  margin-bottom: 20px;
+}
+
+.auth-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Селектори за атрибутом для ширини та відступів */
+input[type="text"],
+input[type="password"] {
+  width: 100%; /* ширина */
+  padding: 12px; /* Відступи всередині */
+  border: 2px solid #e0e0e0;
+  border-radius: 8px; /* Закруглення полів */
+  font-size: 16px;
+  box-sizing: border-box; /* Щоб padding не збільшував ширину */
+  transition: border-color 0.3s ease;
+}
+
+/* Вимога: стан :focus для зміни кольору рамки */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #2ecc71; /* Зміна кольору на зелений  */
+  outline: none;
+}
+
+/* Стиль кнопки */
+.auth-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-submit:hover {
+  background-color: #27ae60;
+}
